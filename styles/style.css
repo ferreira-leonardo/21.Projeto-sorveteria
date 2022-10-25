@@ -44,6 +44,7 @@ header{
     top:0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .header{
@@ -104,6 +105,8 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+   
 }
 
 .text-pag1{
@@ -112,6 +115,8 @@ header{
     flex-direction: column;
     gap: 2vh;
     margin: 0 0 0 30%;
+
+    
 }
 
 .pag1 h1{
@@ -315,7 +320,9 @@ header{
 
 .Depoimentos{
     height: 74vh;
+    width: 100%;
     margin-top: 12vh;
+    color: var(--marrom);
 }
 
 .Depoimentos h1{
@@ -331,10 +338,10 @@ header{
 .deps{
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    gap: 5vw;
     justify-content: space-between;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
@@ -346,10 +353,16 @@ header{
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
+
+.dep:hover{
+    box-shadow: 5px 5px 100px rgba(107, 63, 38, 0.2);
+}
+
 .dep-img img{
     width: 50%;
     height: 50%;
-    transform: translate(50%, 0%);   
+    transform: translate(50%, 0%);
+    z-index: -1;   
 }
 
 .dep-img1{
@@ -391,3 +404,71 @@ header{
     text-align: center;
 }
     
+
+
+
+
+
+
+
+
+/*footer*/
+
+footer{
+    background-color: var(--marrom);
+}
+
+.footer h2{
+    font-size: 2vw;
+    color: var(--rosa);
+}
+
+
+
+
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    padding: 5vh 0;
+}
+
+.rodape-title-redes{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--rosa);
+}
+
+.redessociais{
+    color: var(--rosa);
+    font-size: 3vw;
+}
+
+.leon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leon p, .leon span{
+    font-size: 2rem;
+}
+
+.leon span{
+    color: aqua;
+    cursor: pointer;
+}
+
+.leon span:hover{
+    text-decoration: underline;
+}
+
+.leon-icons, .leon{
+    color: var(--rosa);
+    font-size: 3vw;
+}

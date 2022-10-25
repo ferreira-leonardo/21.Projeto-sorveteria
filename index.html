@@ -7,6 +7,7 @@
     <title>IceCrem</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
 
@@ -16,9 +17,11 @@
 
             <h1><span>Ice</span>Crem</h1>
 
-            <nav>
+            <nav class="nav">
 
-                <ul>
+                <button id="btn-mobile"><span id="hamburger"></span></button>
+
+                <ul class="menu">
 
                     <a href="">
                         <li>Sobre</li>
@@ -45,9 +48,6 @@
     </header>
 
 
-
-
-
     <main>
 
         <section class="pag1">
@@ -56,7 +56,7 @@
 
                 <div class="text-pag1">
 
-                    <h1>Monte o sorvete<br>dos seus sonhos</h1>
+                    <h1>Monte o sorvete dos seus sonhos</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatibus temporibus itaque ea totam eum repellendus. Temporibus itaque ea totam eum repellendus.</p>
                     <a class="linkA" href="#">Peça agora</a>
 
@@ -65,26 +65,6 @@
             </div>
     
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <section class="pag2 pag-geral" >
 
@@ -107,15 +87,11 @@
     
         </section>
 
-
-
-
-
         <section class="pag3 pag-geral">
 
             <div class="text-geral text-pag3">
     
-                <h1>Conheça nosso<br>cardápio</h1>
+                <h1>Conheça nosso cardápio</h1>
     
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus debitis ullam dignissimos! Repellendus debitis ullam dignissimos!Repellendus debitis ullam dignissimos!</p>
     
@@ -131,16 +107,11 @@
     
         </section>
 
-
-
-
-
         <section class="pag4 pag-geral" >
 
             <div class="imagem4 imagem-geral">
     
             </div>
-    
     
             <div class="text-geral text-pag4">
     
@@ -174,28 +145,6 @@
     
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
         <section class="Depoimentos">
     
             <h1>Depoimentos</h1>
@@ -207,7 +156,6 @@
                     <div class="dep-img dep-img1">
                         <img src="img/pesoas/pesoa1.jpg" alt="">
                     </div>
-
 
                     <div class="dep-text">
 
@@ -277,40 +225,47 @@
     
         </section>
 
-
-
     </main>
-
-
-
-
-
-
-
-
 
     <footer class="footer">
 
         <div class="rodape">
     
-            <div>
+            <div class="rodape-title-redes">
+
                 <h2>IceCrem</h2>
+
+
                 <div class="redessociais">
-            
+                    
+                    <i class="bi bi-facebook"></i>
+
+                    <i class="bi bi-instagram"></i>
+
+                    <i class="bi bi-twitter"></i>
+
+                    <i class="bi bi-whatsapp"></i>
+
                 </div>
             </div>
     
-    
-    
             <div class="leon">
+
+                <p>@copywriting <span>Leonardo Ferreira</span></p>
+
+                <div class="leon-icons">
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-github"></i>
+                </div>
             
             </div>
     
         </div>
     
-    
     </footer>
 
-    
+
+    <script src="scripts/script.js"></script>
+
 </body>
 </html>

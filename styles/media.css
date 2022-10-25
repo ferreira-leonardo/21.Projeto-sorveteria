@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+:root{
+    --marrom: #6B3F26;
+    --rosa: #FFC6D9;
+    --verde: #C3F2D0;
+    --creme: #FDF4C9;
+    --laranja: #FFCB85;
+}
+
+.btn-mobili{
+    display: none;
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+    /*header*/
+    .header{
+        margin: 0 2vw;
+    }
+
+    /*Pag1*/
+    .div-pag1{
+        width: 100%;
+    }
+
+    .text-pag1 {
+        gap: 3vh;
+        margin: auto; 
+    }
+
+    .pag1 h1 {
+        font-size: 9rem;
+        width: 100%; 
+    }
+
+    .pag1 p {
+        width: 100%;
+        font-size: 2.3rem;
+    }
+
+
+
+
+    /*Pag2*/
+
+    .text-pag2{
+        width: 100%;
+        background-color: var(--creme);
+    }
+
+    .text-geral h1 {
+        font-size: 6vw;
+    }
+
+    .imagem2{
+        display: none;
+    }
+
+
+
+
+
+
+    /*Pag3*/
+    .pag3{
+        height: 60%;
+    }
+
+    .text-pag3{
+        padding: 20px 55px;
+    }
+
+
+
+
+    /*pag4*/
+    .pag4{
+        height: 50vh;
+    }
+
+    .text-pag4{
+        padding: 20px 55px;
+    }
+
+    .text-geral h3 {
+        font-size: 2.5rem;
+    }
+
+    .text-pag4 p{
+        font-size: 1.7rem;
+    }
+
+    .Informacoes {
+        gap: 2vh;
+    }
+
+
+    /*Depoimentos*/
+
+    .Depoimentos{
+        height: auto;
+        margin-bottom: 15vh;
+        
+    }
+
+    .Depoimentos h1 {
+        font-size: 6vw;
+    }
+
+    .deps{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5vh;
+        justify-content: center;  
+    }
+
+     
+    .dep{
+        width: 40%;
+        height: 60%;
+    }
+
+    .dep-text h3{
+        font-size: 2.2rem;
+    }
+
+    .dep-text p{
+        font-size: 2.2rem;
+    }
+    
+
+
+    /*footer*/
+    .footer h2 {
+        font-size: 4vw;
+    }
+
+    .redessociais {
+        font-size: 6vw;
+    }
+
+    .leon-icons{
+        font-size: 7vw;
+    }
+
+
+}
+
+@media (max-width: 768px){
+
+    .header{
+        align-items: center;
+    }
+
+    .header nav > ul{
+        display: none;
+    }
+    
+    #btn-mobile{
+        display: flex;
+        padding: 10px 1rem .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburger{
+        display: block;
+        border-top: 3px solid;
+        width: 30px;  
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 7px;
+        transition: .3s;
+        position: relative;
+    }
+}
