@@ -50,6 +50,7 @@ header{
     display: flex;
     justify-content: space-around;
     gap: 1vw;
+    align-items: center;
     
     
 }
