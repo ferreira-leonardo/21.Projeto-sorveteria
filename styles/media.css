@@ -8,9 +8,7 @@
     --laranja: #FFCB85;
 }
 
-.btn-mobili{
-    display: none;
-}
+
 
 @media (min-width: 769px) and (max-width: 1024px){
 
@@ -150,37 +148,46 @@
 
 @media (max-width: 768px){
 
-    .header{
-        align-items: center;
+    .nav-bar{
+        padding: 1.5rem 4rem;
+        justify-content: space-between;
     }
 
-    .header nav > ul{
+    .nav-itens{
         display: none;
     }
     
-    #btn-mobile{
-        display: flex;
-        padding: 10px 1rem .5rem 1rem;
-        font-size: 1rem;
+    .login-button{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
         border: none;
-        background: none;
         cursor: pointer;
+        
     }
 
-    #hamburger{
-        display: block;
-        border-top: 3px solid;
-        width: 30px;  
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: end;
+        padding: 0 2rem 1rem 2rem;
     }
 
-    #hamburger::after, #hamburger::before{
-        content: '';
+    .mobile-menu .nav-itens{
         display: block;
-        width: 30px;
-        height: 3px;
-        background: currentColor;
-        margin-top: 7px;
-        transition: .3s;
-        position: relative;
+        padding-top: 1.2rem;
+        border-bottom: 2px solid rgba(107, 63, 38, 0.1);
+    }
+
+    .open{
+        display: block;
+        height: 25vh;
     }
 }

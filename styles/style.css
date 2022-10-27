@@ -37,52 +37,86 @@ body{
 }
 
 header{
-    height: 6vh;
-    padding-top: .6vh;
     background-color: #fffeef;
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
+    box-shadow: 0px 3px 10px #24252a3f;
+    z-index: 1000;
 }
 
-.header{
+.nav-bar{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 1vw;
+    
+    
+}
+
+.logo{
+    display: flex;
     align-items: center;
-    margin: 0 10vw;
-} 
-
-.header h1, .header h1>span{
-    font-family: var(--font);
-    font-size: 4rem;
-    color: #6B3F26;
-    margin-top: -.6vh;
 }
 
-.header h1>span{
+.logo h1{
     color: rgb(0, 191, 229);
+    font-size: 4rem;
+    font-family: 'Patrick Hand', cursive;
 }
 
-.header nav > ul{
+.logo h1 span{
+    color: #6b3f26;
+    font-size: 4rem;
+}
+
+.nav-list{
     display: flex;
-    gap: 50px;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-itens{
+    margin: 0 15px;
+    transition: .4s all;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #6b3f26;
     font-family: cursive;
-    font-size: 4.5rem;
     font-weight: 600;
     text-transform: uppercase;
+    transition: .2s all;
 }
 
-.header li{
-    color: #6B3F26;
-    transition: .5s all;
-}
-
-.header li:hover{
-    letter-spacing:.4px;
+.nav-itens:hover, .nav-link:hover{
     color: rgb(0, 191, 229);
+    scale: 1.07;
+}
+
+.login-button button{
+    border: none;
+    background-color: #0187a7;
+    padding: 10px 15px;
+    border-radius: 5px;
+} 
+
+.login-button button a{
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
 }
 
 
