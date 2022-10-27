@@ -23,6 +23,10 @@
     --font: 'Patrick Hand', cursive;
 }
 
+.imagem-gerall{
+    display: none;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -84,7 +88,7 @@ header{
 
 .nav-link{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #6b3f26;
     font-family: var(--font);
     font-weight: 600;
@@ -385,11 +389,13 @@ header{
     height: 40%;
     background-color: white;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
+    transition: .2s all;
 }
 
 
 .dep:hover{
     box-shadow: 5px 5px 100px rgba(107, 63, 38, 0.2);
+    scale: 1.07;
 }
 
 .dep-img img{

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 
 
 :root{
@@ -8,6 +10,8 @@
     --verde: #C3F2D0;
     --creme: #FDF4C9;
     --laranja: #FFCB85;
+
+    --font: 'Patrick Hand', cursive;
 }
 
 
@@ -148,8 +152,8 @@
 
 }
 
-@media (max-width: 768px){
-
+@media (max-width: 768px) {
+    /*header*/
     .nav-bar{
         padding: 1.5rem 4rem;
         justify-content: space-between;
@@ -197,4 +201,372 @@
         display: block;
         height: 100vh; 
     }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+
+
+    /*imagem-gerall*/
+    .imagem-gerall{
+        display: block;
+    }
+    .imagem-gerall img{
+        width: 100vw;
+        height: 100vw;
+    }
+
+    /*pag1*/
+    .div-pag1{
+        width: 100%;
+        
+    }
+
+    .text-pag1 {
+        gap: 3vh;
+        margin: auto; 
+    }
+
+    .pag1 h1 {
+        font-size: 10vw;
+        width: 100%; 
+    }
+
+    .pag1 p {
+        width: 86%;
+        font-size: 2rem;
+    }
+
+    .div-pag1 a {
+        width: 86%;
+    }
+
+
+    /*pag2*/
+    .text-pag2{
+        width: 100%;
+        background-color: var(--creme);
+        padding: 0px 50px;
+    }
+
+    .text-geral h1 {
+        font-size: 6vw;
+    }
+
+    .imagem2{
+        display: none;
+    }
+
+
+    /*pag3*/
+    .pag3{
+        height: 75vh;
+        
+    }
+
+    .text-pag3{
+        width: 100%;
+        padding: 20px 55px;
+        gap: 3vh;
+    }
+
+    .text-pag3 p{
+        width: 98%;
+    }
+
+    .imagem3{
+        display: none;
+    }
+
+    /*pag4*/
+    .pag4{
+        height: 60vh;
+    }
+
+    .text-pag4{
+        width: 100%;
+        padding: 20px 55px;
+    }
+
+    .text-pag4 h1{
+        font-size: 4rem;
+    }
+
+    .text-pag4 h3 {
+        font-family: var(--font);
+        font-size: 2.5rem;
+    }
+
+    .text-pag4 p{
+        font-size: 1.7rem;
+    }
+
+    .imagem4{
+        display: none;
+    }
+
+    .Informacoes {
+        gap: 2vh;
+    }
+
+    
+
+
+    /*depoimentos*/
+    .Depoimentos{
+        height: 100%;
+        margin-top: 6vh;
+    }
+
+    .Depoimentos h1 {
+        font-size: 4.5rem;
+        margin-bottom: 6vh;
+    }
+
+    .deps{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5vh;
+        justify-content: space-evenly;  
+    }
+
+    .dep{
+        width: 38%;
+    }
+
+    .dep-text h3 {
+        font-size: 2.4rem;
+    }
+
+    .dep-text p {
+        font-size: 1.7rem;
+    }
+
+
+
+    /*footer*/
+    .footer h2 {
+        font-size: 5vw;
+    }
+
+    .redessociais {
+        font-size: 6vw;
+    }
+
+    .redessociais i{
+        margin-left: 1rem;
+    }
+
+    .leon-icons {
+        color: var(--rosa);
+        font-size: 7vw;
+    }
+
+    .leon-icons i{
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px){
+
+    .imagem-gerall{
+        display: block;
+    }
+
+    .imagem-gerall img{
+        width: 100vw;
+        height: 100vw;
+    }
+
+    /*Pag1*/
+    .div-pag1{
+        width: 100%;
+        
+    }
+
+    .text-pag1 {
+        gap: 3vh;
+        margin: auto; 
+    }
+
+    .pag1 h1 {
+        font-size: 10vw;
+        width: 100%; 
+    }
+
+    .pag1 p {
+        width: 86%;
+        font-size: 2rem;
+    }
+
+    .div-pag1 a {
+        width: 86%;
+    }
+
+
+    /*Pag2*/
+    .text-pag2{
+        width: 100%;
+        background-color: var(--creme);
+        padding: 0px 50px;
+    }
+
+    .text-pag2 h1 {
+        font-size: 12vw;
+    }
+
+    .text-pag2 p{
+        font-size: 1.6vh;
+    }
+
+    .imagem2{
+        display: none;
+    }
+
+    /*Pag3*/
+    .pag3{
+        height: 75vh;
+        
+    }
+
+    .text-pag3{
+        width: 100%;
+        padding: 20px 55px;
+        gap: 3vh;
+    }
+
+    .text-pag3 h1 {
+        font-size: 12vw;
+    }
+
+    .text-pag3 p{
+        font-size: 1.6vh;
+    }
+
+    .text-pag3 a {
+        width: 99%;
+        
+        font-size: 1.9rem;
+        
+    }
+
+    .imagem3{
+        display: none;
+    }
+
+    /*Pag4*/
+    .pag4{
+        height: 60vh;
+    }
+
+    .text-pag4{
+        width: 100%;
+        padding: 20px 55px;
+    }
+
+    .text-pag4 h1{
+        font-size: 4rem;
+    }
+
+    .text-pag4 h3 {
+        font-family: var(--font);
+        font-size: 2.5rem;
+    }
+
+    .text-pag4 p{
+        font-size: 1.7rem;
+    }
+
+    .imagem4{
+        display: none;
+    }
+
+    .Informacoes {
+        gap: 2vh;
+    }
+
+    /*Depoimentos*/
+    .Depoimentos{
+        height: 100%;
+        margin-top: 6vh;
+    }
+
+    .Depoimentos h1 {
+        font-size: 4.5rem;
+        margin-bottom: 6vh;
+    }
+
+    .deps{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5vh;
+        justify-content: space-evenly;  
+    }
+
+    .dep{
+        width: 70%;
+    }
+
+    .dep-text h3 {
+        font-size: 2.4rem;
+    }
+
+    .dep-text p {
+        font-size: 1.7rem;
+    }
+
+    /*footer*/
+    .footer h2 {
+        font-size: 8vw;
+        margin-bottom: 2rem;
+    }
+
+    .rodape-title-redes {
+        flex-direction: column;
+        align-items: flex-start;
+        border: none;
+    }
+
+    .redessociais {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 10vw;
+    }
+
+    .redessociais i:nth-child(1)::after{
+        content: ' Facebook';
+        font-size: 2rem;
+    }
+
+    .redessociais i:nth-child(2)::after{
+        content: ' Instagram';
+        font-size: 2rem;
+    }
+
+    .redessociais i:nth-child(3)::after{
+        content: ' Twitter';
+        font-size: 2rem;
+    }
+
+    .redessociais i:nth-child(4)::after{
+        content: ' Whatsapp';
+        font-size: 2rem;
+    }
+
+    .redessociais i{
+        margin-left: 1rem;
+    }
+
+    .leon-icons {
+        color: var(--rosa);
+        font-size: 8vw;
+        margin-top: 1rem;
+    }
+
+    .leon-icons i{
+        margin-left: 1rem;
+    }
+    
 }
