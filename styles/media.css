@@ -188,7 +188,12 @@
         border-bottom: 2px solid rgba(107, 63, 38, 0.1);
     }
 
-    .open{
+    .open {
+        display: block;
+        height: 100vh;
+    }
+
+    .mobile-menu .open{
         display: block;
         height: 100vh;
     }
