@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 :root{
     --marrom: #6B3F26;
     --rosa: #FFC6D9;
@@ -188,6 +190,6 @@
 
     .open{
         display: block;
-        height: 25vh;
+        height: 100vh;
     }
 }

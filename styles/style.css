@@ -58,7 +58,7 @@ header{
 .logo h1{
     color: rgb(0, 191, 229);
     font-size: 4rem;
-    font-family: 'Patrick Hand', cursive;
+    font-family: var(--font);
 }
 
 .logo h1 span{
@@ -86,7 +86,7 @@ header{
     text-decoration: none;
     font-size: 2rem;
     color: #6b3f26;
-    font-family: cursive;
+    font-family: var(--font);
     font-weight: 600;
     text-transform: uppercase;
     transition: .2s all;
